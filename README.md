@@ -25,28 +25,15 @@
 
 ## 快速安装
 
-### 方式一：下载脚本（推荐）
-
-**macOS / Linux:****
 ```bash
-curl -fsSL https://raw.githubusercontent.com/wyjjj445/agentic-workflow/main/install.sh | bash
-```
-
-### 方式二：手动安装
-
-```bash
-# 1. 创建技能目录
-mkdir -p ~/.claude/skills/agentic-flow
-mkdir -p ~/.claude/rules
-
-# 2. 安装技能文件
+# 方式一：复制文件到 .claude 目录
+mkdir -p ~/.claude/skills/agentic-flow ~/.claude/rules
 cp SKILL.md ~/.claude/skills/agentic-flow/
 cp RULES.md ~/.claude/rules/agentic-workflow.md
 ```
 
-### 方式三：作为 Git 子模块
-
 ```bash
+# 方式二：作为 Git 子模块
 git submodule add https://github.com/wyjjj445/agentic-workflow.git .claude/skills/agentic-flow
 ln -sf ../skills/agentic-flow/RULES.md .claude/rules/agentic-workflow.md
 ```
@@ -95,8 +82,6 @@ agentic-workflow/
 ├── RULES.md              # Claude Code 规则（自动强制执行）
 ├── README.md             # 本文件
 ├── LICENSE               # MIT 许可证
-├── .gitignore
-├── install.sh            # Unix 安装脚本
 └── docs/
     ├── quick-start.md    # 快速入门指南
     └── phases/           # 各阶段详解
