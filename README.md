@@ -27,16 +27,7 @@
 
 ### 方式一：下载脚本（推荐）
 
-**Windows (PowerShell):**
-```powershell
-# 从 PSGallery 安装（如果尚未安装）
-Install-Module -Name PowerShellGet -Force -AllowClobber
-
-# 下载并运行安装脚本
-irm https://raw.githubusercontent.com/wyjjj445/agentic-workflow/main/install.ps1 | iex
-```
-
-**macOS / Linux:**
+**macOS / Linux:****
 ```bash
 curl -fsSL https://raw.githubusercontent.com/wyjjj445/agentic-workflow/main/install.sh | bash
 ```
@@ -105,7 +96,6 @@ agentic-workflow/
 ├── README.md             # 本文件
 ├── LICENSE               # MIT 许可证
 ├── .gitignore
-├── install.ps1           # Windows 安装脚本
 ├── install.sh            # Unix 安装脚本
 └── docs/
     ├── quick-start.md    # 快速入门指南
